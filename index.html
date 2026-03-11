@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anthony Chen SMS — CTA, Terms & Privacy</title>
-  <meta name="description" content="Anthony Chen SMS program CTA (opt-in), Terms & Conditions, and Privacy Policy." />
+  <title>Anthony Chen Text Reminders & Updates</title>
+  <meta name="description" content="Public sign-up page for recurring informational text messages from Anthony Chen." />
   <style>
     :root {
       --bg: #ffffff;
@@ -12,92 +12,129 @@
       --muted: #4b5563;
       --border: #e5e7eb;
       --card: #f9fafb;
-      --code: #f3f4f6;
+      --accent: #f3f4f6;
     }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.55;
+      line-height: 1.6;
     }
     header {
-      border-bottom: 1px solid var(--border);
-      background: var(--bg);
       position: sticky;
       top: 0;
-      z-index: 5;
+      z-index: 10;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
     }
     .wrap {
-      max-width: 980px;
+      max-width: 920px;
       margin: 0 auto;
       padding: 18px 16px;
     }
     nav {
       display: flex;
-      gap: 14px;
       flex-wrap: wrap;
-      align-items: center;
+      gap: 10px;
     }
     nav a {
-      color: var(--text);
       text-decoration: none;
-      border: 1px solid var(--border);
-      padding: 8px 10px;
-      border-radius: 999px;
+      color: var(--text);
       background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 12px;
       font-size: 14px;
     }
     nav a:hover { opacity: 0.85; }
-
-    main .wrap { padding-top: 22px; padding-bottom: 60px; }
-    h1 { margin: 8px 0 4px; font-size: 28px; }
-    .sub { margin: 0 0 18px; color: var(--muted); }
-
-    section { margin-top: 22px; }
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px;
-      background: #fff;
-      box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    main .wrap {
+      padding-top: 24px;
+      padding-bottom: 56px;
     }
-    .card + .card { margin-top: 14px; }
-
-    .pill {
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+    h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+    p { margin: 12px 0; }
+    ul, ol {
+      margin: 10px 0 0 22px;
+      padding: 0;
+    }
+    li { margin: 6px 0; }
+    .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+    .badge {
       display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
       border: 1px solid var(--border);
       background: var(--card);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 13px;
       color: var(--muted);
-      margin-top: 6px;
+      font-size: 13px;
     }
-
-    ul { margin: 10px 0 0 20px; }
-    li { margin: 6px 0; }
-    code { background: var(--code); padding: 2px 6px; border-radius: 8px; }
-    .muted { color: var(--muted); }
-    .small { font-size: 13px; }
-    .divider { height: 1px; background: var(--border); margin: 18px 0; }
-
+    .hero, .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+      padding: 22px;
+    }
+    .hero {
+      margin-top: 20px;
+    }
+    .card {
+      margin-top: 18px;
+    }
+    .highlight {
+      background: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .sample {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      word-break: break-word;
+    }
+    .small {
+      font-size: 14px;
+      color: var(--muted);
+    }
     footer {
+      margin-top: 24px;
       border-top: 1px solid var(--border);
+      padding-top: 18px;
       color: var(--muted);
       font-size: 13px;
-      padding: 18px 0;
     }
     a { color: inherit; }
   </style>
 </head>
-
 <body>
   <header>
     <div class="wrap">
       <nav>
-        <a href="#cta">SMS Call to Action (CTA)</a>
-        <a href="#terms">Terms & Conditions</a>
+        <a href="#cta">Subscribe</a>
+        <a href="#workflow">How It Works</a>
+        <a href="#terms">Terms &amp; Conditions</a>
         <a href="#privacy">Privacy Policy</a>
         <a href="#samples">Sample Messages</a>
       </nav>
@@ -106,127 +143,87 @@
 
   <main>
     <div class="wrap">
-      <h1>Anthony Chen SMS — CTA, Terms & Privacy</h1>
-      <p class="sub">Public disclosures for A2P/10DLC compliance review. <span class="pill">Last updated: March 2, 2026</span></p>
+      <h1>Anthony Chen Text Reminders &amp; Updates</h1>
+      <p class="sub">Public sign-up page for recurring informational text messages from Anthony Chen.</p>
 
-      <!-- CTA -->
-      <section id="cta" class="card">
-        <h2>SMS Call to Action (CTA)</h2>
-        <p><strong>Program / Brand:</strong> Anthony Chen</p>
+      <section id="cta" class="hero">
+        <span class="badge">Text-message keyword opt-in only</span>
+        <h2>Subscribe by text</h2>
+        <p><strong>Text START to +13322909097 from the mobile number you want to enroll.</strong></p>
+        <p>By texting <strong>START</strong>, you agree to receive recurring informational text messages from <strong>Anthony Chen</strong> at that mobile number.</p>
 
-        <div class="divider"></div>
+        <div class="highlight">
+          <ul>
+            <li><strong>Message types:</strong> calendar reminders, reservation confirmations, delivery updates, and task alerts requested by the recipient</li>
+            <li><strong>Message frequency:</strong> varies; up to 10 messages per week</li>
+            <li><strong>Message and data rates may apply.</strong></li>
+            <li><strong>Help:</strong> reply HELP for help</li>
+            <li><strong>Opt out:</strong> reply STOP to opt out</li>
+            <li><strong>Enrollment rule:</strong> only the mobile number that texts START is enrolled</li>
+            <li><strong>Program type:</strong> no marketing or promotional messages</li>
+          </ul>
+        </div>
 
-        <p><strong>What messages are for:</strong> Low-volume recurring reminders and notifications requested by the recipient, such as calendar reminders, reservation confirmations, delivery updates, and task alerts. <strong>No marketing or promotional messaging.</strong></p>
-
-        <div class="divider"></div>
-
-        <p><strong>How to opt in:</strong> Text <strong>START</strong> to <strong>+13322909097</strong> to subscribe to recurring informational text messages from <strong>Anthony Chen</strong>. You will receive one confirmation message before any recurring messages are sent.</p>
-        <ul>
-          <li><strong>Message frequency:</strong> varies; up to 10 messages per week</li>
-          <li><strong>Message &amp; data rates may apply.</strong></li>
-          <li><strong>Only the mobile number that texts START is subscribed.</strong></li>
-        </ul>
-
-        <div class="divider"></div>
-
-        <p><strong>Data sharing:</strong> No mobile opt-in data will be shared with third parties or affiliates for marketing or promotional purposes.</p>
-
-        <div class="divider"></div>
-
-        <p><strong>Opt out:</strong> Reply <strong>STOP</strong> to opt out at any time. You will receive one final confirmation message and no further messages.</p>
-        <p><strong>Help:</strong> Reply <strong>HELP</strong> for help.</p>
-
-        <div class="divider"></div>
-
-        <p class="small muted">
-          Jump to: <a href="#terms">Terms &amp; Conditions</a> · <a href="#privacy">Privacy Policy</a>
-        </p>
+        <p><strong>No mobile opt-in data will be shared with third parties or affiliates for marketing or promotional purposes.</strong></p>
+        <p class="small">Review the <a href="#terms">Terms &amp; Conditions</a> and <a href="#privacy">Privacy Policy</a> below on this same page.</p>
       </section>
 
-      <!-- Terms -->
+      <section id="workflow" class="card">
+        <h2>How enrollment works</h2>
+        <ol>
+          <li>Visit this page and review the enrollment terms and privacy disclosures.</li>
+          <li>Text <strong>START</strong> to <strong>+13322909097</strong> from the mobile number you want to enroll.</li>
+          <li>You receive one confirmation message before any recurring reminders or notifications are sent.</li>
+        </ol>
+        <p>This program uses one opt-in method only: text-message keyword opt-in. No web form, paper form, verbal opt-in, purchased list, or third-party lead source is used for this program.</p>
+      </section>
+
       <section id="terms" class="card">
         <h2>Terms &amp; Conditions</h2>
-
-        <p><strong>Program Name:</strong> Anthony Chen SMS Notifications</p>
-
-        <p><strong>Program Description:</strong> Anthony Chen sends low-volume recurring informational text messages to users who have opted in. Examples include calendar reminders, reservation confirmations, delivery updates, and task alerts requested by the recipient. No marketing or promotional messages.</p>
-
+        <p><strong>Program Name:</strong> Anthony Chen Text Reminders &amp; Updates</p>
+        <p><strong>Program Description:</strong> Anthony Chen sends recurring informational text messages only to users who have explicitly opted in by texting START from their own mobile number. Message types include calendar reminders, reservation confirmations, delivery updates, and task alerts requested by the recipient. No marketing or promotional messages.</p>
+        <p><strong>Opt-In:</strong> You opt in by texting <strong>START</strong> to <strong>+13322909097</strong>. Only the mobile number that sends START is enrolled.</p>
         <p><strong>Message Frequency:</strong> Message frequency varies; up to 10 messages per week.</p>
-
-        <p><strong>Message and Data Rates:</strong> Message and data rates may apply. Consult your wireless carrier for details.</p>
-
-        <p><strong>Opt-In:</strong> You opt in by texting <strong>START</strong> to <strong>+13322909097</strong>. Only the mobile number that sends START is subscribed.</p>
-
-        <p><strong>Opt-Out:</strong> You can cancel at any time by texting <strong>STOP</strong>. After sending STOP, you will receive a one-time confirmation message and will no longer receive messages.</p>
-
-        <p><strong>Help:</strong> For support, text <strong>HELP</strong> to any Anthony Chen message.</p>
-
+        <p><strong>Message and Data Rates:</strong> Message and data rates may apply.</p>
+        <p><strong>Opt-Out:</strong> You can cancel at any time by texting <strong>STOP</strong>. After sending STOP, you will receive one confirmation message and will no longer receive messages.</p>
+        <p><strong>Help:</strong> For assistance, text <strong>HELP</strong>.</p>
         <p><strong>Carriers:</strong> Carriers are not liable for delayed or undelivered messages.</p>
-
-        <p class="small muted">Return to: <a href="#cta">CTA</a> · <a href="#privacy">Privacy</a></p>
       </section>
 
-      <!-- Privacy -->
       <section id="privacy" class="card">
         <h2>Privacy Policy</h2>
-
-        <p>Anthony Chen (“we,” “us,” “our”) provides this messaging program. This policy explains how we collect, use, and protect information in connection with text messages sent through this program.</p>
-
+        <p>Anthony Chen provides this messaging program. This policy explains how information is collected, used, and protected in connection with this SMS program.</p>
         <h3>Information We Collect</h3>
-        <p>We may store your mobile phone number, message history, and opt-in records (including the opt-in keyword and timestamp) solely to deliver the messages you requested and to maintain proof of consent.</p>
-
-        <h3>How We Use Your Information</h3>
+        <p>We may store your mobile phone number, message history, and opt-in records, including the opt-in keyword and timestamp, to deliver the messages you requested and to maintain proof of consent.</p>
+        <h3>How We Use Information</h3>
         <p>Your information is used only to send the reminders and notifications you opted in to receive and to maintain consent and opt-out records.</p>
-
         <h3>Messaging Disclosures</h3>
         <p>Message frequency varies; up to 10 messages per week. Message and data rates may apply.</p>
-
         <h3>Data Sharing</h3>
-        <p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Mobile opt-in data will not be sold or shared with third parties for marketing or promotional purposes.</strong></p>
-
+        <p><strong>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes. Mobile opt-in data will not be sold or shared with third parties or affiliates for marketing or promotional purposes.</strong></p>
         <h3>Data Retention</h3>
         <p>Phone numbers, consent records, and message logs are retained only as long as necessary to provide the service and maintain compliance records.</p>
-
         <h3>Opt-Out / Help</h3>
-        <p>You may opt out at any time by replying <strong>STOP</strong>. For assistance, reply <strong>HELP</strong>.</p>
-
-        <p class="small muted">Return to: <a href="#cta">CTA</a> · <a href="#terms">Terms</a></p>
+        <p>You may opt out at any time by replying <strong>STOP</strong>. For help, reply <strong>HELP</strong>.</p>
       </section>
 
-      <!-- Samples -->
       <section id="samples" class="card">
         <h2>Sample Messages</h2>
-        <p class="muted small">Examples of message content associated with this program.</p>
+        <p class="small">These examples show the message types and keyword responses associated with this program.</p>
 
-        <div class="divider"></div>
+        <h3>Keyword response examples</h3>
+        <div class="sample"><strong>Opt-in confirmation</strong><br>Anthony Chen: You are now opted in to recurring reminders and notifications for this mobile number. Msg frequency varies, up to 10 msgs/week. Msg &amp; data rates may apply. Reply HELP for help. Reply STOP to opt out.</div>
+        <div class="sample"><strong>Help response</strong><br>Anthony Chen: Help for reminders and notifications. Reply STOP to opt out.</div>
+        <div class="sample"><strong>Opt-out confirmation</strong><br>Anthony Chen: You have opted out and will receive no further messages. Reply START to opt back in.</div>
 
-        <p><strong>Sample #1 (Opt-in confirmation)</strong><br/>
-          Anthony Chen: You are subscribed to recurring reminders and notifications. Msg frequency varies, up to 10 msgs/week. Msg&amp;data rates may apply. Reply STOP to opt out. Reply HELP for help.
-        </p>
-
-        <p><strong>Sample #2 (Reminder)</strong><br/>
-          Anthony Chen: Reminder: [event/task] at [time] on [date]. Reply STOP to opt out. Reply HELP for help.
-        </p>
-
-        <p><strong>Sample #3 (Update)</strong><br/>
-          Anthony Chen: Update: [reservation/delivery/task] status: [status]. Reply STOP to opt out. Reply HELP for help.
-        </p>
-
-        <p><strong>Sample #4 (Confirmation)</strong><br/>
-          Anthony Chen: Confirmation: [reservation/appointment] is scheduled for [date] at [time]. Reply STOP to opt out. Reply HELP for help.
-        </p>
-
-        <p><strong>Sample #5 (Delivery update)</strong><br/>
-          Anthony Chen: Delivery update: [item/order] is scheduled for [date]. Reply STOP to opt out. Reply HELP for help.
-        </p>
-
-        <p class="small muted">Return to: <a href="#cta">CTA</a></p>
+        <h3>Informational message examples</h3>
+        <div class="sample"><strong>Reminder</strong><br>Anthony Chen: Reminder: [event/task] at [time] on [date]. Reply STOP to opt out. Reply HELP for help.</div>
+        <div class="sample"><strong>Reservation confirmation</strong><br>Anthony Chen: Confirmation: [reservation] is scheduled for [date] at [time]. Reply STOP to opt out. Reply HELP for help.</div>
+        <div class="sample"><strong>Status update</strong><br>Anthony Chen: Update: [delivery/task] status: [status]. Reply STOP to opt out. Reply HELP for help.</div>
       </section>
 
       <footer>
-        <div class="wrap" style="padding:0;">
-          <p>Anthony Chen SMS disclosures for A2P/10DLC compliance.</p>
-        </div>
+        Anthony Chen Text Reminders &amp; Updates — public SMS sign-up page, terms, privacy policy, and sample messages.
       </footer>
     </div>
   </main>
